@@ -1,0 +1,30 @@
+body{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-image: url(gif-heart-8.gif);
+background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+.caixa{
+   display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 50vh;
+
+}
+.titulo{
+  color: white;
+  display: flex;
+  justify-content: center;
+  border: 8px solid white;
+  border-radius: 20px;
+  padding: 20px;
+}
+.contador{
+  color: white;
+  
+
+}
