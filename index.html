@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>Facebook</div>
+    <header>
+        <h1>📋 Meu Quadro Kanban</h1>
+        <button id="openModalBtn">+ Nova Tarefa</button>
+    </header>
+
+    <main class="kanban-container">
+        <!-- Coluna: A Fazer -->
+        <div class="column" data-status="todo">
+            <div class="column-header todo">A Fazer</div>
+            <div class="task-list" id="todo-list"></div>
+        </div>
+
+        <!-- Coluna: Em Andamento -->
+        <div class="column" data-status="doing">
+            <div class="column-header doing">Em Andamento</div>
+            <div class="task-list" id="doing-list"></div>
+        </div>
+
+        <!-- Coluna: Concluído -->
+        <div class="column" data-status="done">
+            <div class="column-header done">Concluído</div>
+            <div class="task-list" id="done-list"></div>
+        </div>
+    </main>
+
+    <!-- Modal para Criar Tarefa -->
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Nova Tarefa</h2>
+            <form id="taskForm">
+                <label for="taskTitle">Título:</label>
+                <input type="text" id="taskTitle" required placeholder="Ex: Estudar JavaScript">
+
+                <label for="taskDesc">Descrição:</label>
+                <textarea id="taskDesc" placeholder="Ex: Ler o capítulo 3 do livro"></textarea>
+
+                <label for="taskPriority">Prioridade:</label>
+                <select id="taskPriority">
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+
+                <button type="submit" class="save-btn">Salvar Tarefa</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
