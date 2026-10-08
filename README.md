@@ -32,9 +32,7 @@ O projeto utiliza as tecnologias web fundamentais (Vanilla Tech Stack):
 ## 📝 Próximos Passos (Melhorias Futuras)
 
 Pretendo implementar as seguintes funcionalidades nas próximas versões:
-- [ ] Implementação de arrastar e soltar nativo (*Drag and Drop API*).
-- [ ] Barra de busca para filtrar tarefas por título ou conteúdo.
-- [ ] Modo escuro (*Dark Mode*) automático baseado na preferência do sistema.
+- [ ] Implementação um banco de dados próprio.
 
 ---
 
